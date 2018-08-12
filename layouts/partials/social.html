@@ -8,6 +8,10 @@
       <li><a href="mailto:{{ .Site.Params.Social.Email }}"><i class="fa fa-envelope"></i></a></li>
     {{ end }}
 
+    {{ if .Site.Params.Social.Keybase }}
+      <li><a href="https://keybase.io/{{ .Site.Params.Social.Keybase }}"><i class="fa fa-key"></i></a></li>
+    {{ end }}
+
     {{ if .Site.Params.Social.Twitter }}
       <li><a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}"><i class="fa fa-twitter"></i></a></li>
     {{ end }}
